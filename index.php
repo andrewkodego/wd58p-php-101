@@ -1,14 +1,85 @@
 <?php
-    $page_title = $_REQUEST['page_title'];
-    $value2 = $_REQUEST['var2'];
+
+    include 'exercise_2.php';
+
+    //$page_title = $_REQUEST['page_title'];
+    //$value2 = $_REQUEST['var2'];
+
+
 ?>
 <!DOCTYPE html>  
 <html>  
     <title><?php echo $page_title.' '.$value2 ?></title>
 <body>  
+
+<h3>Check if a character is a vowel or consonant</h3>
 <?php  
+
+    echo checkIfVowelOrConsonant('a').'<br/>';
+    echo checkIfVowelOrConsonant('b').'<br/>';
+    echo checkIfVowelOrConsonant('C').'<br/>';
+    echo checkIfVowelOrConsonant('D').'<br/>';
+    echo checkIfVowelOrConsonant('E').'<br/>';
+
+    echo checkIfVowelOrConsonant_arr('a').'<br/>';
+    echo checkIfVowelOrConsonant_arr('b').'<br/>';
+    echo checkIfVowelOrConsonant_arr('C').'<br/>';
+    echo checkIfVowelOrConsonant_arr('D').'<br/>';
+    echo checkIfVowelOrConsonant_arr('E').'<br/>';
+
+    echo convertDigitToWord(721).'<br/>';
+    echo convertDigitToWord(563).'<br/>';
+    echo convertDigitToWord(129).'<br/>';
+    echo convertDigitToWord(1234567890).'<br/>';
+
+    echo isDivisibleByThree(8).'<br/>';
+    echo isDivisibleByThree(3).'<br/>';
+    echo isDivisibleByThree(15).'<br/>';
+    echo isDivisibleByThree(22).'<br/>';
+
+    if(isDivisibleByThree_Bool(8)){
+        echo 'is divisible by 3<br/>';
+    }else{
+        echo 'is not divisible by 3<br/>';
+    }
+
+    echo isDivisibleByThree_str(3).'<br/>';
+
+    echo implode(', ', deleteDuplicate(['one','one','two','three','four','four','five','six','six'])).'<br/>';
+
+    echo isArmstrongNumber(153).'<br/>';
+
+    echo isArmstrongNumber(1).'<br/>';
+    
+    echo isArmstrongNumber(21).'<br/>';
+
+    echo isArmstrongNumber(1634).'<br/>';
+
+    echo isArmstrongNumber(371).'<br/>';
+
+    echo isArmstrongNumber(8208).'<br/>';
+    echo isArmstrongNumber(9474).'<br/>';
+    echo isArmstrongNumber(54748).'<br/>';
+    
+    if(isArmstrongNumber_bool(371)){
+        echo 'Armstrong Number<br/>';
+    }else{
+        echo 'Not Armstrong Number<br/>';
+    }
+
+    if(isArmstrongNumber_bool(54)){
+        echo 'Armstrong Number<br/>';
+    }else{
+        echo 'Not Armstrong Number<br/>';
+    }
+
     echo "<h1>Hello, I'm WD58P</h1>";  
     echo 1 + 4;
+
+    $students =  array(["name"=>"John Garg","age" => "15","school"=> "Ahlcon Public school"],
+    ["name"=>"Smith Soy","age"=>"16","school"=>"St. Marie school"],
+    ["name"=>"Charle Rena","age"=>"16","school"=>"St. Columba school"]);
+
 ?>  
 
 <div>
