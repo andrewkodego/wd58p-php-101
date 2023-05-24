@@ -1,6 +1,10 @@
 <?php
 
+include 'Model.php';
+
 class Shape{
+
+    use ModelTraits, OptionListTraits;
 
     protected $height;
     protected $widht;
