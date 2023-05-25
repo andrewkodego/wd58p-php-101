@@ -85,6 +85,7 @@ class Circle extends Shape{
 
 }
 
+/* 
 $square = new Square(4,7);
 echo $square->computeArea().'<br/>';
 echo $square->computePerimeter().'<br/>';
@@ -97,3 +98,5 @@ echo $triangle->computeArea().'<br/>';
 
 $circle = new Circle(5);
 echo $circle->computeArea().'<br/>';
+
+*/
